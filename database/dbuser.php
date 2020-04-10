@@ -18,6 +18,7 @@
             $statement->bindValue("email", $email, PDO::PARAM_STR);
             $statement->bindValue("password", $password_hash, PDO::PARAM_STR);
             $statement->bindValue("username", $username, PDO::PARAM_STR);
+            $statement->bindValue("img", $username,null, PDO::PARAM_LOB);
            
 
             $ok = false;
